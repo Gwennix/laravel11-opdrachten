@@ -62,6 +62,134 @@ Let op, de volgende wijzigingen zijn doorgevoerd bij de opdrachten:
 <li>In de database komt de correcte name & description.</li>
 <li>Nadat het is opgeslagen word je automatisch naar de index gestuurd met de melding dat het project is toegevoegd.</li>
 </ul></li></ul>
+<li>Bij opdracht6 wordt nu getest of :
+<ul><li>je werkelijk gebruik maakt van een aparte validatie request: ProjectStoreRequest</li>
+<li>De foutmeldingen bij validatie errors op het scherm komen</li>
+<li>Na correct opslaan er een redirect naar project.index wordt gebruikt, met gebruik van een flash message</li>
+<li>De melding bij opslaan in de index getoond wordt: Project {projectnaam} is aangemaakt</li>
+</ul></li>
+<li>Opdracht7: niets aangepast</li>
+<li>Bij opdracht8 wordt nu getest of :
+<ul>
+<li>De correcte action in het formulier staat naar 'projects.update'</li>
+<li>De input velden voor name & description er correct in staan</li>
+<li>je werkelijk gebruik maakt van een aparte validatie request: ProjectUpdateRequest</li>
+<li>De foutmeldingen bij validatie errors op het scherm komen</li>
+<li>Na correct opslaan er een redirect naar project.index wordt gebruikt, met gebruik van een flash message</li>
+<li>De melding bij update in de index getoond wordt: Project {projectnaam} is gewijzigd</li>
+</ul></li>
+<li>Bij opdracht9 wordt nu getest of :
+<ul>
+<li>De correcte action in het formulier staat naar 'projects.update'</li>
+<li>De input velden voor name & description er correct in staan</li>
+<li>Na correct verwijderen er een redirect naar project.index wordt gebruikt, met gebruik van een flash message</li>
+<li>De melding bij delete in de index getoond wordt: Project {projectnaam} is verwijderd</li>
+</ul></li>
+<li>Opdracht10: niets aangepast</li>
+<li>Bij opdracht11 wordt nu getest of :
+<ul>
+<li>De controller moet in de map staan: App/Http/Controllers/Open/ </li>
+<li>De naam van de controller is: ProjectController</li>
+<li>De view moet in de map staan: Resources/views/open/projects/ </li>
+<li>De naam van de view is: index.blade.php</li>
+<li>Op de pagina moeten de id, name en description staan.</li>
+<li>Er moet met pagina's worden gewerkt, met 10 projecten per pagina, waarbij de correcte data wordt getoond.</li>
+</ul></li>
+<li>Bij opdracht12 wordt nu getest of :
+<ul>
+<li>Rollen en permissies correct zijn aangemaakt en toegewezen.</li>
+<li>Permissies correct zijn ingesteld in de controllers.</li>
+</ul></li>
+<li>Bij opdracht13 wordt nu getest of :
+<ul>
+<li>Gebruikers correct zijn aangemaakt en toegewezen aan de juiste rollen.</li>
+<li>De gebruiker correct kan inloggen en de juiste permissies heeft.</li>
+</ul></li>
+<li>Bij opdracht14 wordt nu getest of :
+<ul>
+<li>De middleware correct is ingesteld voor de routes.</li>
+<li>De routes correct zijn beveiligd met de juiste permissies.</li>
+</ul></li>
+<li>Bij opdracht15 wordt nu getest of :
+<ul>
+<li>Rollen en permissies correct zijn ingesteld voor toegang tot projectbeheer.</li>
+<li>De projectbeheerfunctionaliteit correct werkt voor gebruikers met de juiste rollen en permissies.</li>
+</ul></li>
+<li>Bij opdracht16 wordt nu getest of :
+<ul>
+<li>De tabel 'tasks' correct is aangemaakt met de juiste kolommen en datatypes.</li>
+<li>De relaties tussen 'tasks', 'users', 'projects' en 'activities' correct zijn gedefinieerd met de juiste foreign key constraints.</li>
+<li>De juiste migraties en modellen zijn aangemaakt voor 'tasks' en 'activities'.</li>
+</ul></li>
+<li>Bij opdracht17 wordt nu getest of :
+<ul>
+<li>De factory voor 'tasks' correct is aangemaakt en data kan genereren die voldoet aan de kolomgrootte en validatievoorwaarden.</li>
+<li>De gegenereerde data wordt opgeslagen in de database en voldoet aan de vereisten.</li>
+</ul></li>
+<li>Bij opdracht18 wordt nu getest of :
+<ul>
+<li>De seeder voor 'tasks' correct is aangemaakt en minimaal 10 taken genereert.</li>
+<li>De gegenereerde data correct in de database wordt opgeslagen.</li>
+<li>De juiste volgorde van seeding is gewaarborgd.</li>
+</ul></li>
+<li>Bij opdracht19 wordt nu getest of :
+<ul>
+<li>De resource controller voor 'tasks' correct is aangemaakt met de juiste named routes.</li>
+<li>De indexpagina voor taken binnen de masterpage correct wordt weergegeven.</li>
+<li>De indexpagina de juiste taken weergeeft met alle vereiste kolommen en data.</li>
+<li>De paginering op de indexpagina correct werkt.</li>
+<li>De show-, edit-, en delete-links correct worden weergegeven op de indexpagina.</li>
+</ul></li>
+<li>Bij opdracht20 wordt nu getest of :
+<ul>
+<li>De permissies voor 'tasks' correct zijn aangemaakt en toegewezen aan de juiste rollen.</li>
+<li>De toegang tot de verschillende methoden van de 'tasks' controller correct is beveiligd met de juiste permissies.</li>
+<li>De juiste middleware voor permissiebeheer wordt gebruikt in de controller.</li>
+</ul></li>
+<li>Bij opdracht21 wordt nu getest of :
+<ul>
+<li>De create methode van de 'tasks' controller correct werkt en de juiste view retourneert.</li>
+<li>Het create formulier de juiste inputvelden bevat en de correcte dropdown opties toont voor 'users', 'projects' en 'activities'.</li>
+<li>De juiste action en method voor het formulier zijn ingesteld.</li>
+</ul></li>
+<li>Bij opdracht22 wordt nu getest of :
+<ul>
+<li>De store methode van de 'tasks' controller correct werkt en de gegevens valideert en opslaat in de database.</li>
+<li>De juiste validatieregels worden toegepast en foutmeldingen correct worden weergegeven bij validatie errors.</li>
+<li>Mass assignment niet mogelijk is door het correct instellen van de guarded eigenschappen in het model.</li>
+<li>Na correct opslaan er een redirect naar de indexpagina wordt gebruikt met een flash message.</li>
+</ul></li>
+<li>Bij opdracht23 wordt nu getest of :
+<ul>
+<li>De show methode van de 'tasks' controller correct werkt en de juiste view retourneert.</li>
+<li>De show view de correcte gegevens van de taak weergeeft.</li>
+</ul></li>
+<li>Bij opdracht24 wordt nu getest of :
+<ul>
+<li>De edit methode van de 'tasks' controller correct werkt en de juiste view retourneert.</li>
+<li>Het edit formulier de juiste inputvelden bevat met de correcte vooraf ingevulde gegevens van de taak.</li>
+<li>De correcte dropdown opties toont voor 'users', 'projects' en 'activities' met de huidige waarden geselecteerd.</li>
+<li>De juiste action en method voor het formulier zijn ingesteld.</li>
+</ul></li>
+<li>Bij opdracht25 wordt nu getest of :
+<ul>
+<li>De update methode van de 'tasks' controller correct werkt en de gegevens valideert en bijwerkt in de database.</li>
+<li>De juiste validatieregels worden toegepast en foutmeldingen correct worden weergegeven bij validatie errors.</li>
+<li>Mass assignment niet mogelijk is door het correct instellen van de guarded eigenschappen in het model.</li>
+<li>Na correct bijwerken er een redirect naar de indexpagina wordt gebruikt met een flash message.</li>
+<li>De update methode de TaskStoreRequest gebruikt voor validatie.</li>
+</ul></li>
+<li>Bij opdracht26 wordt nu getest of :
+<ul>
+<li>De delete methode van de 'tasks' controller correct werkt en de juiste view retourneert.</li>
+<li>De delete view de correcte gegevens van de taak weergeeft met alle inputvelden disabled.</li>
+<li>De juiste action en method voor het formulier zijn ingesteld.</li>
+</ul></li>
+<li>Bij opdracht27 wordt nu getest of :
+<ul>
+<li>De destroy methode van de 'tasks' controller correct werkt en de taak verwijdert uit de database.</li>
+<li>Na correct verwijderen er een redirect naar de indexpagina wordt gebruikt met een flash message.</li>
+</ul></li>
 </ol>
 
 ## De installatie (bijv wampserver)
